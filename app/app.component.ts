@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { CustomerService } from './customer/customer.service';
+
+//This is a barrel - index is just a convention
+import {CustomersComponent, CustomerService} from './customer/index';
+
 
 @Component({
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: 'app.component.html',
-    providers: [CustomerService]
 })
 export class AppComponent {
     title = 'Customer App';
